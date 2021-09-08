@@ -1,0 +1,29 @@
+<head runat="server">
+    <title>Lista de tarefas </title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div><script language="javascript" src="menuAgenda.js"></script>
+     <center>Agenda de tarefas<br/><br/>
+       <table>
+               <tr>
+                  <td>
+                    <select id="lista" style="width: 300px; height: 200px" multiple>
+                    </select>
+                  </td>
+                 <td colspan="1" rowspan="1">
+                    <input id="Adicionar" type="button" value="Adicionar" style="width: 300px; height: 100px;" onclick="adicionar()"/><br/>
+                    <input id="Remover" type="button" value="Remover" style="width: 300px; height: 100px;" onclick="removeEventListener()"/><br/>
+                    <input id="Moverparabaixo" type="button" value="Mover pra Cima" style="width: 300px; height: 100px;" onclick="moverPracima()"/><br/>
+                    <input id="MovepraBaixo" type="button" value="Mover pra Baixo"  style="width: 300px; height: 100px;" onclick="movePraBaixo()"/>
+                </td>
+              </tr>
+             <tr>
+                 <td><input id="boxTarefa" type="text" style="width: 300px; height: 40px" maxlength="30"/></td>
+             </tr>
+                
+      </table>
+     </center>
+    </div>
+   </form>
+</body>
